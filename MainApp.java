@@ -10,7 +10,6 @@ public class MainApp {
         Scanner in = new Scanner (System.in);
 
         // Declare story characters
-        System.out.println("Hello world!");
         System.out.println("Enter producer\'s name: ");
         producer = new Producer (in.nextLine());
         System.out.println("Enter 1st consumer\'s name: ");
