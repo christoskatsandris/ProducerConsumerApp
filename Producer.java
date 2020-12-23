@@ -16,8 +16,12 @@ public class Producer extends Thread {
     }
     public void run () {
         try {
+            int productId=1;
             for (int i=1; i<=15; i++) {
-                produce(i, Integer.toString(i));
+                if (ProducersStore.getProduct() == null) {
+                    produce(productId, Integer.toString(productId));
+                    productId++;
+                }
                 sleep(100);
             }
         } catch (InterruptedException e) {

@@ -18,7 +18,7 @@ public class MainApp {
         consumer2 = new Consumer (in.nextLine());
         in.close();
 
-        // Prepare consumer2 for concurrency
+        // Prepare consumer2 for scheduling
 
         Runnable consumer2Runnable = new Runnable () {
             @Override
